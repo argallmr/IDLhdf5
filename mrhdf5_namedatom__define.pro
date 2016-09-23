@@ -50,7 +50,7 @@
 ; :Uses:
 ;   Uses the following external programs::
 ;       cgErrorMSG.pro
-;       IsMember.pro
+;       MrIsMember.pro
 ;       MrHDF5_Attribute__Define.pro
 ;       MrHDF5_Container__Define.pro
 ;

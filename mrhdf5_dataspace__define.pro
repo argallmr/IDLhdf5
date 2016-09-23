@@ -41,7 +41,7 @@
 ; :Uses:
 ;   Uses the following external programs::
 ;       cgErrorMSG.pro
-;       IsMember.pro
+;       MrIsMember.pro
 ;       MrHDF5_Atom__Define.pro
 ;
 ; :Author:

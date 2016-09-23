@@ -50,7 +50,7 @@
 ; :Uses:
 ;   Uses the following external programs::
 ;       cgErrorMSG.pro
-;       IsMember.pro
+;       MrIsMember.pro
 ;       MrHDF5_Attributes__Define.pro
 ;       MrHDF5_Container__Define.pro
 ;
@@ -203,7 +203,7 @@ FOLD_CASE=fold_case
     allNames = self -> Attr_Name()
     
     ;Get the numbers
-    void = IsMember(allNames, attr_name, A_INDICES=attr_index, FOLD_CASE=fold_case)
+    void = MrIsMember(allNames, attr_name, A_INDICES=attr_index, FOLD_CASE=fold_case)
     
     return, attr_index
 end

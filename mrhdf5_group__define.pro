@@ -59,7 +59,7 @@
 ;       MrHDF5_Type__Define.pro
 ;       MrHDF5_Link__Define.pro
 ;       MrIsA.pro
-;       IsMember.pro
+;       MrIsMember.pro
 ;
 ; :Author:
 ;   Matthew Argall::
@@ -883,7 +883,7 @@ FOLD_CASE=fold_case
     member_index = intarr(nMembers)
     
     ;Get the indices
-    void = IsMember(allNames, mName, A_INDICES=mIndex)
+    void = MrIsMember(allNames, mName, A_INDICES=mIndex)
         
     return, mIndex
 end
@@ -941,9 +941,9 @@ FOLD_CASE=fold_case
             else iNames = value_locate(allNames[iSort], obj_name)
 
         ;Make sure an exact match was found
-        void = IsMember(allNames[iSort], obj_name, $
-                        N_NONMEMBERS=nNoMatch, NONMEMBER_INDS=iNoMatch, $
-                        FOLD_CASE=fold_case)
+        void = MrIsMember(allNames[iSort], obj_name, $
+                          NCOMPLEMENT=nNoMatch, COMPLEMENT=iNoMatch, $
+                          FOLD_CASE=fold_case)
         
         ;Report non-matches
         obj_index = iSort[iNames]
